@@ -1,7 +1,7 @@
 .. vim: set fileencoding=utf-8 :
 .. date: Thu Sep 20 11:58:57 CEST 2012
 
-.. _bob.bio.vein.baselines:
+.. _bob.pad.vein.baselines:
 
 ===============================
  Executing Baseline Algorithms
@@ -124,7 +124,7 @@ protocol, do the following:
 
    To run on the Idiap SGE grid using our stock
    io-big-48-slots-4G-memory-enabled (see
-   :py:mod:`bob.bio.vein.configurations.gridio4g48`) configuration, use:
+   :py:mod:`bob.pad.vein.configurations.gridio4g48`) configuration, use:
 
    .. code-block:: sh
 

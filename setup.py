@@ -29,8 +29,16 @@ setup(
 
       # registered configurations:
       'bob.bio.config': [
+        # databases
         'verafinger = bob.pad.vein.configurations.verafinger',
+
+        # baselines
         'fourier = bob.pad.vein.configurations.fourier',
+
+        # other
+        'parallel = bob.pad.vein.configurations.parallel',
+        'gridio4g48 = bob.pad.vein.configurations.gridio4g48',
+        'grid = bob.pad.vein.configurations.gridio4g48',
         ],
 
       },
