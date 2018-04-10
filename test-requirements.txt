@@ -1,0 +1,2 @@
+nose
+bob.db.verafinger
