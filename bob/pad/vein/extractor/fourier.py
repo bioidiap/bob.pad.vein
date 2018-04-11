@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
+import math
 import numpy
 import bob.sp
 from bob.bio.base.extractor import Extractor

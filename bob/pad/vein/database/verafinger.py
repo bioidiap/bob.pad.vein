@@ -70,31 +70,4 @@ class VerafingerPadDatabase(PadDatabase):
 
 
   def annotations(self, f):
-    """
-    Return annotations for a given file object ``f``, which is an instance of
-    ``VerafingerPadFile`` defined in the HLDI of the Verafinger DB.  The
-    ``load()`` method of ``VerafingerPadFile`` class (see above) returns an
-    image, therefore this method returns bounding-box annotations the finger in
-    the image. The annotations are returned as 2D array of 16-bit unsigned
-    integers.
-
-    Parameters
-    ----------
-    f : :any:`VerafingerPadFile`
-        An instance of :any:`VerafingerPadFile` defined above.
-
-    Returns
-    -------
-    annotations : :py:class:`numpy.ndarray`
-        A 2D array of 16-bit unsigned integers in which the first column
-        corresponds to the ``y`` coordinates and the second to the ``x``
-        coordinates of every point. There is no limit on the number of rows
-        (points annotated) in each image. There are, typically, more than 4.
-
-    """
-
-    annotdir = os.path.join(self.original_directory, 'annotations', 'roi')
-    if os.path.exists(annotdir):
-      return self.f.roi(annotdir)
-    else:
-      numpy.empty((0,), dtype=numpy.uint16)
+    return None
