@@ -16,7 +16,7 @@ class HistogramEqualization(Preprocessor):
 
 
   def __init__(self):
-    super(HistogramEqualization).__init__()
+    super(HistogramEqualization, self).__init__()
 
 
   def __call__(self, image, annotations=None):
