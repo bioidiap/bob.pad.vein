@@ -80,3 +80,5 @@ Using SGE at Idiap
 
 .. automodule:: bob.pad.vein.configurations.gridio4g48
    :members:
+
+.. include:: links.rst

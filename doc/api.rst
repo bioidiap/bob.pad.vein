@@ -18,3 +18,4 @@ Vera Fingervein Database
 
 .. automodule:: bob.pad.vein.database.verafinger
 
+.. include:: links.rst
