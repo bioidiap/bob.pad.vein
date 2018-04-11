@@ -7,9 +7,8 @@
  Executing Baseline Algorithms
 ===============================
 
-The first thing you might want to do is to execute one of the vein
-presentation attack detection algorithms that are implemented in
-``bob.pad.vein``.
+The first thing you might want to do is to execute one of the vein presentation
+attack detection algorithms that are implemented in ``bob.pad.vein``.
 
 
 Running Baseline Experiments
@@ -150,29 +149,28 @@ performance:
 
 .. code-block:: sh
 
-   $ bob_eval_threshold.py <path-to>/verafinger/fourier/full/nonorm/scores-dev
-   ('Threshold:', 0.31835292)
-   FAR : 23.636% (11388/48180)
-   FRR : 23.636% (52/220)
-   HTER: 23.636%
-   $ bob_apply_threshold.py 0.31835292 <path-to>/verafinger/fourier/full/nonorm/scores-eval
-   ...
+   $ bob_compute_perf.py --no-plot <path-to>/results/fourier/full/nonorm/scores-{dev,eval}
+   [Min. criterion: EER] Threshold on Development set: 5.340000e-01
+          | Development    | Test
+   -------+----------------+-----------------
+     FMR  | 0.000% (0/120) | 0.000% (0/200)
+     FNMR | 0.000% (0/120) | 0.000% (0/200)
+     HTER | 0.000%         | 0.000%
 
 
-Results for other Baselines
-===========================
+If you do the same analysis for the ``cropped`` protocol, you should observe
+the following output:
 
-This package may generate results for other combinations of protocols and
-databases. Here is a summary table for some variants (results expressed
-correspond to the the equal-error rate on the development set, in percentage):
 
-======================== ====== =========
-       Toolchain           Vera Finger
------------------------- ----------------
-   Feature Extractor      full   cropped
-======================== ====== =========
- Fourier Transform
-======================== ====== =========
+.. code-block:: sh
+
+   $ bob_compute_perf.py --no-plot <path-to>/results/fourier/cropped/nonorm/scores-{dev,eval}
+   [Min. criterion: EER] Threshold on Development set: 5.766667e-01
+          | Development      | Test
+   -------+------------------+-------------------
+     FMR  | 24.167% (29/120) | 21.500% (43/200)
+     FNMR | 24.167% (29/120) | 16.500% (33/200)
+     HTER | 24.167%          | 19.000%
 
 
 Modifying Baseline Experiments
@@ -232,15 +230,6 @@ Notice we replace the use of the registered configuration file named
 ``verafinger`` by the local file ``verafinger_cropped.py``. This makes the
 program ``spoof.py`` take that into consideration instead of the original
 file.
-
-
-Other Resources
----------------
-
-Competition Scores
-==================
-
-.. todo:: Talk about scores and analysis here
 
 
 .. include:: links.rst
