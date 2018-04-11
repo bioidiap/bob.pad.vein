@@ -21,7 +21,7 @@ Databases
 ---------
 
 These resources represent configuration files containing at least settings for
-the following runtime attributes of ``verify.py``:
+the following runtime attributes of ``spoof.py``:
 
   * ``database``
   * ``protocol``
@@ -42,7 +42,7 @@ PA Detection Systems
 --------------------
 
 These resources represent configuration files containing at least settings for
-the following runtime attributes of ``verify.py``:
+the following runtime attributes of ``spoof.py``:
 
   * ``sub_directory``
   * ``preprocessor``
@@ -52,8 +52,8 @@ the following runtime attributes of ``verify.py``:
 
 .. _bob.pad.vein.resources.detection.fourier:
 
-Local Binary Patterns Histograms
-================================
+Fast Fourier Transform-based Features
+=====================================
 
 .. automodule:: bob.pad.vein.configurations.fourier
    :members:
