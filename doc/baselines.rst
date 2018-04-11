@@ -168,7 +168,7 @@ correspond to the the equal-error rate on the development set, in percentage):
 
 ======================== ====== =========
        Toolchain           Vera Finger
-======================== ====== =========
+------------------------ ----------------
    Feature Extractor      full   cropped
 ======================== ====== =========
  Fourier Transform

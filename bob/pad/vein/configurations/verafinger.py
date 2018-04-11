@@ -13,16 +13,16 @@ the link.
 """
 
 
-from ..database.verafinger import Database
+from ..database import VerafingerPadDatabase
 
 _verafinger_directory = "[YOUR_VERAFINGER_DIRECTORY]"
 """Value of ``~/.bob_bio_databases.txt`` for this database"""
 
-database = Database(
+database = VerafingerPadDatabase(
     original_directory = _verafinger_directory,
     original_extension = '.png',
     )
-"""The :py:class:`bob.bio.base.database.BioDatabase` derivative with Verafinger
+"""The :py:class:`bob.pad.base.database.PadDatabase` derivative with Verafinger
 database settings
 
 .. warning::
@@ -34,7 +34,7 @@ database settings
 Notice that ``original_directory`` is set to ``[YOUR_VERAFINGER_DIRECTORY]``.
 You must make sure to create ``${HOME}/.bob_bio_databases.txt`` setting this
 value to the place where you actually installed the Verafinger Database, as
-explained in the section :ref:`bob.bio.vein.baselines`.
+explained in the section :ref:`bob.pad.vein.baselines`.
 """
 
 protocol = 'full'

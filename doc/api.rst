@@ -16,5 +16,5 @@ Database Interfaces
 Vera Fingervein Database
 ========================
 
-.. automodule:: bob.bio.vein.database.verafinger
+.. automodule:: bob.pad.vein.database.verafinger
 

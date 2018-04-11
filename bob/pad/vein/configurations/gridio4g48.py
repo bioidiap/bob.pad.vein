@@ -2,7 +2,7 @@
 # vim: set fileencoding=utf-8 :
 
 
-'''Grid configurations for bob.bio.vein'''
+'''Grid configurations for bob.pad.vein'''
 
 
 import bob.bio.base

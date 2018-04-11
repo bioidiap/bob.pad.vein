@@ -17,7 +17,7 @@ setup(
     author='Pedro Tome',
     author_email='pedro.tome@idiap.ch',
     maintainer='Andre Anjos',
-    author_email='andre.anjos@idiap.ch',
+    maintainer_email='andre.anjos@idiap.ch',
     keywords='bob',
     long_description=open('README.rst').read(),
     packages=find_packages('bob'),
