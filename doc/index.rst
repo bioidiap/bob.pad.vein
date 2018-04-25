@@ -1,6 +1,6 @@
 .. vim: set fileencoding=utf-8 :
 
-.. _bob.pad.face:
+.. _bob.pad.vein:
 
 ======================================================
  Library for Vein Presentation Attack Detection (PAD)
