@@ -102,7 +102,7 @@ protocol, do the following:
 
 .. code-block:: sh
 
-   $ spoof.py verafinger fourier -vv
+   $ spoof.py verafinger-pad fourier -vv
 
 
 .. tip::
@@ -119,7 +119,7 @@ protocol, do the following:
 
    .. code-block:: sh
 
-      $ spoof.py verafinger fourier parallel -vv
+      $ spoof.py verafinger-pad fourier parallel -vv
 
    To run on the Idiap SGE grid using our stock
    io-big-48-slots-4G-memory-enabled (see
@@ -127,7 +127,7 @@ protocol, do the following:
 
    .. code-block:: sh
 
-      $ spoof.py verafinger fourier grid -vv
+      $ spoof.py verafinger-pad fourier grid -vv
 
    You may also, optionally, use the configuration resource ``gridio4g48``,
    which is just an alias of ``grid`` in this package.
@@ -188,8 +188,8 @@ database and use the protocol ``cropped`` instead of the default protocol
 
    $ resources.py -tc -p bob.pad.vein
    - bob.pad.vein X.Y.Z @ /path/to/bob.pad.vein:
-     + verafinger --> bob.pad.vein.configurations.verafinger
-     + fourier    --> bob.pad.vein.configurations.fourier
+     + verafinger-pad --> bob.pad.vein.configurations.verafinger
+     + fourier        --> bob.pad.vein.configurations.fourier
 
 
 The listing above tells the ``verafinger`` configuration file sits on the
@@ -227,9 +227,8 @@ Now, re-run the experiment using your modified database descriptor:
 
 
 Notice we replace the use of the registered configuration file named
-``verafinger`` by the local file ``verafinger_cropped.py``. This makes the
-program ``spoof.py`` take that into consideration instead of the original
-file.
+``verafinger-pad`` by the local file ``verafinger_cropped.py``. This makes the
+program ``spoof.py`` take that into consideration instead of the original file.
 
 
 .. include:: links.rst

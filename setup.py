@@ -30,7 +30,7 @@ setup(
       # registered configurations:
       'bob.bio.config': [
         # databases
-        'verafinger = bob.pad.vein.configurations.verafinger',
+        'verafinger-pad = bob.pad.vein.configurations.verafinger',
 
         # baselines
         'fourier = bob.pad.vein.configurations.fourier',
