@@ -10,7 +10,7 @@ from bob.bio.base.test.utils import db_available
 
 @db_available('verafinger')
 def test_verafinger():
-  module = bob.bio.base.load_resource('verafinger', 'config',
+  module = bob.bio.base.load_resource('verafinger-pad', 'config',
       preferred_package='bob.pad.vein')
   try:
     # counts have already been tested on the low-level database
